@@ -1,0 +1,53 @@
+.navBar {
+    font-family: Segoe UI, sans-serif; 
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.navBar ul {
+    margin: 0px;
+    padding: 0px;
+    color: #f2f2f2;
+    overflow: hidden;
+    background: #333;
+    text-align: center;
+    list-style-type: none;
+}
+
+.navBar ul li {
+    float: left;
+    width: 100px;
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 15px 10px ;
+}
+
+.navBar ul li a {
+    display: block;
+    color: #f2f2f2;
+    position: relative;
+    text-decoration: none;
+}
+
+.navBar ul li:hover:not(.active) {
+    background: #aa5404;
+}
+
+.navBar ul li ul {
+    z-index: -1;
+    left: 8px;
+    display: none;
+    position: absolute;
+}
+
+.navBar ul li:hover ul {
+    top: 55px;
+    display: block;
+    background: #ff7b00;
+}
+
+.navBar ul li ul li {
+    display: block;
+}
+.active {
+    background: #04AA6D;
+}
