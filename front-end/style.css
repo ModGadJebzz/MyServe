@@ -1,11 +1,18 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 .navBar {
     font-family: Segoe UI, sans-serif; 
     text-transform: uppercase;
     font-weight: bold;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
+
 .navBar ul {
-    margin: 0px;
-    padding: 0px;
     color: #f2f2f2;
     overflow: hidden;
     background: #333;
@@ -18,14 +25,16 @@
     width: 100px;
     color: #f2f2f2;
     text-decoration: none;
-    padding: 15px 10px ;
+    
 }
 
 .navBar ul li a {
     display: block;
     color: #f2f2f2;
     position: relative;
+    padding: 15px 10px;
     text-decoration: none;
+    
 }
 
 .navBar ul li:hover:not(.active) {
